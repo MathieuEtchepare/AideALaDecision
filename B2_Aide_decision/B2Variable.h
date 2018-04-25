@@ -3,10 +3,10 @@
 
 #include <vector>
 #include "B2Constraint.h"
-public class Variable{
+class Variable{
     int value;
     std::vector <Constraint*> constraints;
 
-}
+};
 
 #endif // B2VARIABLE_H_INCLUDED
