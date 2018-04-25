@@ -2,11 +2,18 @@
 #define B2VARIABLE_H_INCLUDED
 
 #include <vector>
+#include <iostream>
 #include "B2Constraint.h"
-public class Variable{
-    int value;
-    std::vector <Constraint*> constraints;
 
-}
+class Variable{
+    int value;
+    std::vector<int> domain;
+    std::vector <Constraint*> constraints;
+public:
+    Variable(int val);
+    ~Variable();
+    void push_domain(int n);
+    void print();
+};
 
 #endif // B2VARIABLE_H_INCLUDED
