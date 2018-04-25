@@ -7,7 +7,7 @@
 
 1524665095 source:c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2tree.cpp
 
-1524670160 source:c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2variable.cpp
+1524670698 source:c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2variable.cpp
 	"B2Variable.h"
 
 1524670270 source:c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2problem.cpp
@@ -19,12 +19,12 @@
 	<iostream>
 	<fstream>
 
-1524670104 c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2variable.h
+1524672375 c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2variable.h
 	<vector>
 	<iostream>
 	"B2Constraint.h"
 
-1524667199 c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2constraint.h
+1524672386 c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2constraint.h
 
 1524665257 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraint.cpp
 
