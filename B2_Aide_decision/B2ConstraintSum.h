@@ -5,10 +5,10 @@
 
 class ConstraintSum : public Constraint{
 private:
-    std::vector<int> operands;
+    std::vector<Variable*> operands;
     int result;
     public:
-        ConstraintSum(std::vector<int> op, int res){
+        ConstraintSum(std::vector<Variable*> op, int res){
             for(unsigned int i = 0; i < op.size(); i++)
             {
                 operands.push_back(op[i]);
@@ -20,7 +20,7 @@ private:
         bool test(){
             for(unsigned int i = 0; i < operands.size(); i++)
             {
-                result-=operands[i];
+                result-=operands[i]->getValue();
             }
             return(result == 0);
         }

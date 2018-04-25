@@ -6,5 +6,6 @@
 #include "B2ConstraintSuperior.h"
 #include "B2ConstraintInferior.h"
 #include "B2ConstraintSum.h"
+#include "B2Problem.h"
 
 #endif // B2INCLUDES_H_INCLUDED

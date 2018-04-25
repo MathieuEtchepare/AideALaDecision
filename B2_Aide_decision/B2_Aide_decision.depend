@@ -26,37 +26,59 @@
 
 1524672386 c:\users\romain\documents\github\aidealadecision\b2_aide_decision\b2constraint.h
 
-1524665257 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraint.cpp
+1524672600 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraint.cpp
 
-1524665257 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2tree.cpp
+1524672600 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2tree.cpp
 
-1524665257 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2variable.cpp
+1524672600 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2variable.cpp
+	"B2Variable.h"
 
-1524671610 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\main.cpp
+1524677462 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\main.cpp
 	<iostream>
+	"B2Problem.h"
 	"B2includes.h"
 
 1524669071 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintequality.cpp
 	"B2ConstraintEquality.h"
 
-1524671231 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintequality.h
-	"B2Constraint.h"
+1524676968 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintequality.h
+	"B2BinaryConstraint.h"
 
-1524671689 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraint.h
+1524673648 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraint.h
 
-1524670839 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2includes.h
+1524673648 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2includes.h
 	"B2ConstraintEquality.h"
 	"B2ConstraintInequality.h"
 	"B2ConstraintSuperior.h"
 	"B2ConstraintInferior.h"
 	"B2ConstraintSum.h"
+	"B2Problem.h"
 
-1524671474 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintinequality.h
+1524677020 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintinequality.h
+	"B2BinaryConstraint.h"
 
-1524671522 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintsuperior.h
+1524677020 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintsuperior.h
+	"B2BinaryConstraint.h"
 
-1524671521 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintinferior.h
+1524677020 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintinferior.h
+	"B2BinaryConstraint.h"
 
-1524671485 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintsum.h
+1524677402 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2constraintsum.h
 	<vector>
+
+1524673948 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2variable.h
+	<vector>
+	<iostream>
+	"B2Constraint.h"
+
+1524672600 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2problem.h
+	"B2Variable.h"
+	<vector>
+	<iostream>
+	<fstream>
+
+1524672600 source:c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2problem.cpp
+	"B2Problem.h"
+
+1524676951 c:\users\karine\documents\github\aidealadecision\b2_aide_decision\b2binaryconstraint.h
 

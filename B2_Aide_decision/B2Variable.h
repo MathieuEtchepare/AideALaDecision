@@ -11,6 +11,7 @@ class Variable{
 public:
     Variable(int val);
     ~Variable();
+    int getValue(){return value;}
     void push_domain(int n);
     void print();
 };

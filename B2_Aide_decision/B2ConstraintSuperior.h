@@ -1,17 +1,16 @@
 #ifndef B2CONSTRAINTSUPERIOR_H_INCLUDED
 #define B2CONSTRAINTSUPERIOR_H_INCLUDED
 
-class ConstraintSuperior : public Constraint{
-    int value1, value2;
-    public:
-        ConstraintSuperior(int v1, int v2){
-            value1 = v1;
-            value2 = v2;
-        };
-        ~ConstraintSuperior(){};
-        bool test(){
-            return (value1 > value2);
-        }
+#include "B2BinaryConstraint.h"
+
+class ConstraintSuperior : public BinaryConstraint{
+public:
+    ConstraintSuperior(Variable* first, Variable* second){
+        setV1(first);
+        setV2(second);
+    };
+    ~ConstraintSuperior(){};
+    bool test(){return (getV1()->getValue() > getV2()->getValue());}
 };
 
 #endif // B2CONSTRAINTSUPERIOR_H_INCLUDED

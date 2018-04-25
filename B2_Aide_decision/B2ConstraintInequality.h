@@ -1,16 +1,16 @@
 #ifndef B2CONSTRAINTINEQUALITY_H
 #define B2CONSTRAINTINEQUALITY_H
 
+#include "B2BinaryConstraint.h"
 
-class ConstraintInequality : public Constraint{
-    int value1, value2;
-    public:
-        ConstraintInequality(int v1, int v2){
-            value1 = v1;
-            value2 = v2;
-        };
-        ~ConstraintInequality(){};
-        bool test(){return (value1 != value2);}
+class ConstraintInequality : public BinaryConstraint{
+public:
+    ConstraintInequality(Variable* first, Variable* second){
+        setV1(first);
+        setV2(second);
+    };
+    ~ConstraintInequality(){};
+    bool test(){return (getV1()->getValue() != getV2()->getValue());}
 };
 
 #endif // B2CONSTRAINTINEQUALITY_H

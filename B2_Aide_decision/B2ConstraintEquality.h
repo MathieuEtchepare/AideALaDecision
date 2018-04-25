@@ -1,17 +1,16 @@
 #ifndef B2CONSTRAINTEQUALITY_H_INCLUDED
 #define B2CONSTRAINTEQUALITY_H_INCLUDED
 
-#include "B2Constraint.h"
+#include "B2BinaryConstraint.h"
 
-class ConstraintEquality : public Constraint{
-    int value1, value2;
+class ConstraintEquality : public BinaryConstraint{
 public:
-    ConstraintEquality(int v1, int v2){
-        value1 = v1;
-        value2 = v2;
+    ConstraintEquality(Variable* first, Variable* second){
+        setV1(first);
+        setV2(second);
     };
     ~ConstraintEquality(){};
-    bool test(){return (value1 == value2);}
+    bool test(){return (getV1()->getValue() == getV2()->getValue());}
 };
 
 #endif // B2CONSTRAINTEQUALITY_H_INCLUDED

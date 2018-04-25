@@ -8,7 +8,7 @@ class Constraint{
 public:
         Constraint(){};
         ~Constraint(){};
-        virtual bool test(){std::cout<<"NIKE TA MERE";}
+        virtual bool test(){};
 };
 
 

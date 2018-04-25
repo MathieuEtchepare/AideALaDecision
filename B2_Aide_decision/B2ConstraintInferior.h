@@ -1,17 +1,16 @@
 #ifndef B2CONSTRAINTINFERIOR_H_INCLUDED
 #define B2CONSTRAINTINFERIOR_H_INCLUDED
 
-class ConstraintInferior : public Constraint{
-    int value1, value2;
+#include "B2BinaryConstraint.h"
+
+class ConstraintInferior : public BinaryConstraint{
     public:
-        ConstraintInferior(int v1, int v2){
-            value1 = v1;
-            value2 = v2;
-        };
-        ~ConstraintInferior(){};
-        bool test(){
-            return (value1 < value2);
-        }
+      ConstraintInferior(Variable* first, Variable* second){
+        setV1(first);
+        setV2(second);
+    };
+    ~ConstraintInferior(){};
+    bool test(){return (getV1()->getValue() < getV2()->getValue());}
 };
 
 
