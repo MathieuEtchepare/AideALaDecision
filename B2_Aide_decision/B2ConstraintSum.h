@@ -8,7 +8,7 @@ private:
     std::vector<Variable*> operands;
     int result;
     public:
-        ConstraintSum(std::vector<Variable*> op, int res){
+        ConstraintSum(std::vector<Variable*> op, int res) : Constraint(5){
             for(unsigned int i = 0; i < op.size(); i++)
             {
                 operands.push_back(op[i]);

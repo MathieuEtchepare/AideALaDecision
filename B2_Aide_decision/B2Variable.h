@@ -4,10 +4,12 @@
 #include <vector>
 #include <iostream>
 #include "B2Constraint.h"
+
 class Variable{
     int value;
     std::vector<int> domain;
     std::vector <Constraint*> constraints;
+
 public:
     Variable(int val);
     ~Variable();
