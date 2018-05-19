@@ -26,6 +26,7 @@ private:
         ~MultipleConstraint(){}
 
         virtual bool test();
+        virtual bool canTest();
         virtual void print() const;
 
         void addVariable(int id){

@@ -10,7 +10,7 @@
 #include <iostream>
 #include <fstream>
 
-#define DEBUG 1
+#define DEBUG 0
 class Node{
     public:
     int _idVariable, _valueVariable;
@@ -29,7 +29,9 @@ public :
     void readFile(std::string const &filename);
     void print();
 
-    std::map<int, int> trivial(Node node); // 1: valeurs assigés, 2: domaines a l'instant t
+    std::map<int, int> method_trivial(Node node);
+    std::map<int, int> method_reduction(Node node);
+    std::vector<int> new_domain(int idVariables, std::vector<int> domain, std::map<int, int> current_variables);
 
     std::map<int, std::vector<int> > getDomains() {return _domains;}
 };

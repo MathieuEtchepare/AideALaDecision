@@ -14,6 +14,7 @@ public:
         ~BinaryConstraint(){}
 
         virtual bool test();
+        virtual bool canTest();
         virtual void print() const;
 };
 

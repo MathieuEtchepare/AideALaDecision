@@ -12,7 +12,7 @@ int main()
     n._idVariable = 0;
     n._current_domains = p.getDomains();
 
-    map<int, int> m = p.trivial(n);
+    map<int, int> m = p.method_reduction(n);
 
     for(map<int, int>::iterator it=m.begin(); it!=m.end(); ++it)
     {

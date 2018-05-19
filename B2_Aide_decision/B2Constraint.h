@@ -19,7 +19,8 @@ protected:
 public:
         Constraint(int type) : _type(type) {}
         virtual ~Constraint(){}
-        virtual bool test() = 0;
+        virtual bool test() = 0; // renvoie vrai si la contrainte est respecté
+        virtual bool canTest() = 0; // renvoie vrai si les variables requises sont toutes presentes
         virtual void print() const = 0;
         int getType(){ return _type;}
         void setVariables(std::map<int, int> variables){ _variables = variables; }
