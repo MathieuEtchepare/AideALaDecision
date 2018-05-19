@@ -2,22 +2,22 @@
 
 using namespace std;
 
-Variable::Variable(int val){
-    value = val;
+Variable::Variable(int id){
+    _id = id;
 }
 
 Variable::~Variable(){}
 
 void Variable::push_domain(int n){
-    domain.push_back(n);
+    _domain.push_back(n);
 }
 
 void Variable::print(){
-    cout << "Value : " << value << endl;
-    cout << "Domain : ";
-    for(unsigned int i = 0; i < domain.size(); i++){
-        cout << domain[i] << " ";
+    cout << "x" << _id;
+    cout << ": { ";
+    for(unsigned int i = 0; i < _domain.size(); i++){
+        cout << _domain[i] << " ";
     }
 
-    cout << endl;
+    cout << "}" << endl;
 }

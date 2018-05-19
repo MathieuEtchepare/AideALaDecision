@@ -11,12 +11,14 @@
 */
 
 class Constraint{
+protected:
     int _type;
-
 public:
-        Constraint(int type) : _type(type) {};
-        ~Constraint(){};
+        Constraint(int type) : _type(type) {}
+        virtual ~Constraint(){}
         virtual bool test() = 0;
+        virtual void print() const = 0;
+        int getType(){ return _type;}
 };
 
 

@@ -6,14 +6,16 @@
 #include "B2Constraint.h"
 
 class Variable{
-    int value;
-    std::vector<int> domain;
-    std::vector <Constraint*> constraints;
-
+    int _id;
+    int _value;
+    std::vector<int> _domain;
 public:
-    Variable(int val);
+    Variable(int id);
     ~Variable();
-    int getValue(){return value;}
+
+    int getId(){return _id;}
+    int getValue(){return _value;}
+
     void push_domain(int n);
     void print();
 };
