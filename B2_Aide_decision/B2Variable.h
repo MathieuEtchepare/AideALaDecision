@@ -7,14 +7,12 @@
 
 class Variable{
     int _id;
-    int _value;
     std::vector<int> _domain;
 public:
     Variable(int id);
     ~Variable();
 
     int getId(){return _id;}
-    int getValue(){return _value;}
 
     void push_domain(int n);
     void print();

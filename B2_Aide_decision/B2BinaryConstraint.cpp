@@ -3,16 +3,16 @@
 bool BinaryConstraint::test(){
     switch(_type){
         case 1:
-            return (_v1->getValue() == _v2->getValue());
+            return (_variables[_idV1] == _variables[_idV2]);
         break;
         case 2:
-            return (_v1->getValue() != _v2->getValue());
+            return (_variables[_idV1] != _variables[_idV2]);
         break;
         case 3:
-            return (_v1->getValue() > _v2->getValue());
+            return (_variables[_idV1] <= _variables[_idV2]);
         break;
         case 4:
-            return (_v1->getValue() < _v2->getValue());
+            return (_variables[_idV1] < _variables[_idV2]);
         break;
         default:
             std::cout << "Error type of binary constraint undefined" << std::endl;
@@ -21,7 +21,7 @@ bool BinaryConstraint::test(){
 };
 
 void BinaryConstraint::print() const{
-    std::cout << "x" << _v1->getId();
+    std::cout << "x" << _idV1;
     switch(_type){
         case 1:
             std::cout << " = ";
@@ -30,11 +30,11 @@ void BinaryConstraint::print() const{
             std::cout << " != ";
         break;
         case 3:
-            std::cout << " > ";
+            std::cout << " <= ";
         break;
         case 4:
             std::cout << " < ";
         break;
     }
-    std::cout << "x" << _v2->getId() << std::endl;
+    std::cout << "x" << _idV2 << std::endl;
 }

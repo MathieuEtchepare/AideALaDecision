@@ -8,6 +8,16 @@ int main()
     Problem p("test.txt");
     p.print();
 
+    Node n;
+    n._idVariable = 0;
+    n._current_domains = p.getDomains();
+
+    map<int, int> m = p.trivial(n);
+
+    for(map<int, int>::iterator it=m.begin(); it!=m.end(); ++it)
+    {
+        cout << it->first << " : " << it->second << endl;
+    }
     /**
     vector<Constraint*> contraintes;
     vector<Variable*> temp;

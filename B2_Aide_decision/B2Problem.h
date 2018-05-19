@@ -10,14 +10,28 @@
 #include <iostream>
 #include <fstream>
 
+#define DEBUG 1
+class Node{
+    public:
+    int _idVariable, _valueVariable;
+    std::map<int, int> _current_variables;
+    std::map<int, std::vector<int> > _current_domains;
+};
+
 class Problem{
-    std::map<int, Variable*> _variables;
+    int _nVariables;
+    std::vector<int> _variables; // variables ID's
+    std::map<int, std::vector<int> > _domains; // variables ID's give Domain
     std::vector <Constraint*> _constraints;
 public :
     Problem(std::string const &filename);
     ~Problem();
     void readFile(std::string const &filename);
     void print();
+
+    std::map<int, int> trivial(Node node); // 1: valeurs assigés, 2: domaines a l'instant t
+
+    std::map<int, std::vector<int> > getDomains() {return _domains;}
 };
 
 

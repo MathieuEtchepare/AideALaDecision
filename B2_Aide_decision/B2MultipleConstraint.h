@@ -8,17 +8,17 @@
 
 class MultipleConstraint : public Constraint{
 private:
-    std::vector<Variable*> _variables;
+    std::vector<int> _idVariables;
     int _result;
     public:
         MultipleConstraint(int res, int type) : Constraint(type){
             _result = res;
         }
 
-        MultipleConstraint(std::vector<Variable*> op, int res, int type) : Constraint(type){
-            for(unsigned int i = 0; i < op.size(); i++)
+        MultipleConstraint(std::vector<int> ids, int res, int type) : Constraint(type){
+            for(unsigned int i = 0; i < ids.size(); i++)
             {
-                _variables.push_back(op[i]);
+                _idVariables.push_back(ids[i]);
             }
             _result = res;
         }
@@ -28,8 +28,8 @@ private:
         virtual bool test();
         virtual void print() const;
 
-        void addVariable(Variable* var){
-            _variables.push_back(var);
+        void addVariable(int id){
+            _idVariables.push_back(id);
         }
 };
 
