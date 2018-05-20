@@ -42,8 +42,6 @@
 		<Unit filename="B2Problem.h" />
 		<Unit filename="B2Tree.cpp" />
 		<Unit filename="B2Tree.h" />
-		<Unit filename="B2Variable.cpp" />
-		<Unit filename="B2Variable.h" />
 		<Unit filename="B2includes.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>

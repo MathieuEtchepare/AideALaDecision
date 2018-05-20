@@ -40,11 +40,11 @@ void Problem::readFile(string const &filename){
     // On charge les contraines
     flow >> index; // recupere le type de la contrainte
     while(index != -1){
-        if(index > 0 && index <= 4){
+        if(index > 0 && index <= 6){
             flow >> n;
             flow >> m;
             _constraints.push_back(new BinaryConstraint(n, m, index));
-        }else if(index > 4 && index <= 5){
+        }else if(index > 6 && index <= 9){
             std::vector<int> vars;
             flow >> n;
             flow >> m;

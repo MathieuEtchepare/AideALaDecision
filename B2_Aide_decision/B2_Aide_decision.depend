@@ -84,7 +84,7 @@
 
 1525776627 source:d:\documents\github\aidealadecision\b2_aide_decision\b2constraint.cpp
 
-1526768781 source:d:\documents\github\aidealadecision\b2_aide_decision\b2problem.cpp
+1526808626 source:d:\documents\github\aidealadecision\b2_aide_decision\b2problem.cpp
 	"B2Problem.h"
 
 1526768805 d:\documents\github\aidealadecision\b2_aide_decision\b2problem.h
@@ -109,7 +109,7 @@
 1526748942 source:d:\documents\github\aidealadecision\b2_aide_decision\b2variable.cpp
 	"B2Variable.h"
 
-1526768375 source:d:\documents\github\aidealadecision\b2_aide_decision\main.cpp
+1526807398 source:d:\documents\github\aidealadecision\b2_aide_decision\main.cpp
 	<iostream>
 	"B2Problem.h"
 	"B2includes.h"
@@ -146,6 +146,6 @@
 1526766521 source:d:\documents\github\aidealadecision\b2_aide_decision\b2multipleconstraint.cpp
 	"B2MultipleConstraint.h"
 
-1526768792 source:d:\documents\github\aidealadecision\b2_aide_decision\b2binaryconstraint.cpp
+1526807963 source:d:\documents\github\aidealadecision\b2_aide_decision\b2binaryconstraint.cpp
 	"B2BinaryConstraint.h"
 

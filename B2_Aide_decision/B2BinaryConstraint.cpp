@@ -1,7 +1,6 @@
 #include "B2BinaryConstraint.h"
 
 bool BinaryConstraint::test(){
-    print();
     switch(_type){
         case 1:
             return (_variables[_idV1] == _variables[_idV2]);
@@ -14,6 +13,12 @@ bool BinaryConstraint::test(){
         break;
         case 4:
             return (_variables[_idV1] < _variables[_idV2]);
+        break;
+        case 5:
+            return (_variables[_idV1] >= _variables[_idV2]);
+        break;
+        case 6:
+            return (_variables[_idV1] > _variables[_idV2]);
         break;
         default:
             std::cout << "Error type of binary constraint undefined" << std::endl;
