@@ -13,7 +13,7 @@
 #define DEBUG 0
 class Node{
     public:
-    int _idVariable, _valueVariable;
+    int _index, _valueVariable;
     std::map<int, int> _current_variables;
     std::map<int, std::vector<int> > _current_domains;
 };
@@ -28,10 +28,14 @@ public :
     ~Problem();
     void readFile(std::string const &filename);
     void print();
+    void printVariablesOrder();
 
     std::map<int, int> method_trivial(Node node);
     std::map<int, int> method_reduction(Node node);
     std::vector<int> new_domain(int idVariables, std::vector<int> domain, std::map<int, int> current_variables);
+
+    void sort_variables(); // tri les variables du plus petit domaine de valeur au plus grand
+    void reverse_sort_variables(); // tri les variables du plus petit domaine de valeur au plus grand
 
     std::map<int, std::vector<int> > getDomains() {return _domains;}
 };
