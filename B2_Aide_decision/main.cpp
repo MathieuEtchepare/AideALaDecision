@@ -9,8 +9,10 @@ int main()
     p.print();
 
     Node n;
-    n._idVariable = 0;
+    n._index = -1;
     n._current_domains = p.getDomains();
+    p.sort_variables();
+    p.printVariablesOrder();
 
     map<int, int> m = p.method_reduction(n);
 
