@@ -32,20 +32,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="B2BinaryConstraint.cpp" />
 		<Unit filename="B2BinaryConstraint.h" />
 		<Unit filename="B2Constraint.cpp" />
 		<Unit filename="B2Constraint.h" />
-		<Unit filename="B2ConstraintEquality.h" />
-		<Unit filename="B2ConstraintInequality.h" />
-		<Unit filename="B2ConstraintInferior.h" />
-		<Unit filename="B2ConstraintSum.h" />
-		<Unit filename="B2ConstraintSuperior.h" />
+		<Unit filename="B2MultipleConstraint.cpp" />
+		<Unit filename="B2MultipleConstraint.h" />
 		<Unit filename="B2Problem.cpp" />
 		<Unit filename="B2Problem.h" />
 		<Unit filename="B2Tree.cpp" />
 		<Unit filename="B2Tree.h" />
-		<Unit filename="B2Variable.cpp" />
-		<Unit filename="B2Variable.h" />
 		<Unit filename="B2includes.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>

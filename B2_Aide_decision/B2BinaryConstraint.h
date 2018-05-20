@@ -1,16 +1,21 @@
 #ifndef B2BINARYCONSTRAINT_H_INCLUDED
 #define B2BINARYCONSTRAINT_H_INCLUDED
 
+#include "B2Variable.h"
+#include "B2Constraint.h"
+
 class BinaryConstraint : public Constraint{
-    Variable *v1, *v2;
+    int _idV1, _idV2;
 public:
-        BinaryConstraint(){};
-        ~BinaryConstraint(){};
-        virtual bool test(){};
-        Variable* getV1(){return v1;}
-        Variable* getV2(){return v2;}
-        void setV1(Variable* v){v1 = v;}
-        void setV2(Variable* v){v2 = v;}
+        BinaryConstraint(int idV1, int idV2, int type) : Constraint(type) {
+            _idV1 = idV1;
+            _idV2 = idV2;
+        }
+        ~BinaryConstraint(){}
+
+        virtual bool test();
+        virtual bool canTest();
+        virtual void print() const;
 };
 
 
